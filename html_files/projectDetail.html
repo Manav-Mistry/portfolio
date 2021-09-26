@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css_files/nav.css">
+  <link rel="stylesheet" href="../css_files/projectDetail.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>Project Details</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <input type="checkbox" id="check">
+      <label for="check"><i class="fa fa-bars" style="color: white;"></i></label>
+
+      <ul class="nav_menu">
+        <li>
+          <img class="MyIcon" src="../pictures/myIcon_nav.jpg" alt="MySelf" height="40px" width="40px" />
+        </li>
+        <li><a href="navigation.html">Home</a></li>
+        <li><a href="contactUs.html">Contact Me</a></li>
+        <li><a href="signUp.html">Login/Sign Up</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="content">
+<div class="form-wraper">
+    <form>
+      <fieldset class="hireForm">
+        <legend>Hire Form</legend>
+        <label for="name">Name*</label>
+        <input type="text" name="name" id="name" placeholder="Write your full name" required>
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" placeholder="Write your email" required>
+        <label for="type">Project type*</label>
+        <select name="pro_type" id="type">
+          <option value="frontend only">frontend only</option>
+          <option value="frontend with backend">frontend + backend</option>
+        </select>
+        <label for="describe">Description of project*</label>
+        <textarea name="information" id="describe" cols="60" rows="10"
+          placeholder="Write here about your expected project in detail discription "></textarea>
+        <div class="dates">
+          Desire project complesion Date*
+          <input type="number" min="1" max="31" placeholder="DD">
+          <input type="number" min="1" max="12" placeholder="MM">
+          <input type="number" min="2020" max="2030" placeholder="YYYY">
+        </div>
+        <input type="submit" name="submit">
+      </fieldset>
+    </form>
+  </div>
+  </section>
+</body>
+
+</html>

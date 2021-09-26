@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css_files/nav.css">
+    <link rel="stylesheet" href="../css_files/certificates.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>certificates</title>
+</head>
+<body>
+
+    
+  <header>
+    <nav class="navbar">
+
+      <input type="checkbox" id="check">
+      <label for="check"><i class="fa fa-bars" style="color: white;"></i></label>
+
+      <ul class="nav_menu">
+        <li>
+          <img class="MyIcon" src="../pictures/myIcon_nav.jpg" alt="MySelf" height="40px" width="40px" />
+        </li>
+        <li><a href="navigation.html">Home</a></li>
+        <li><a href="contactUs.html">Contact Me</a></li>
+        <li><a href="signUp.html">Login/Sign Up</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+      <section class="content">
+          <div class="horizotal-pic">
+              <img class="myImg" id="myImg-1" src="../pictures/certi-1.jfif" alt="image" >
+              <img class="myImg" id="myImg-2" src="../pictures/certi-2.jfif" alt="image" >
+              <img class="myImg" id="myImg-3" src="../pictures/certi-3.jfif" alt="image" >
+              <img class="myImg" id="myImg-4" src="../pictures/certi-4.jfif" alt="image" >
+
+          </div>
+
+          <div class="vertical-pic">
+            <img class="myImg" id="myImg-5" src="../pictures/certi-5.jfif" alt="image">
+            <img class="myImg" id="myImg-6" src="../pictures/certi-6.jfif" alt="image">
+            <img class="myImg" id="myImg-7" src="../pictures/certi-7.jfif" alt="image">
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+
+          <div class="vertical-pic"></div>
+      </section>
+
+      <script>
+        // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img1 = document.getElementById("myImg-1");
+    var img2 = document.getElementById("myImg-2");
+    var img3 = document.getElementById("myImg-3");
+    var img4 = document.getElementById("myImg-4");
+    var img5 = document.getElementById("myImg-5");
+    var img6 = document.getElementById("myImg-6");
+    var img7 = document.getElementById("myImg-7");
+
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    img5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    img6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+    img7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+    modal.style.display = "none";
+    }
+    </script>
+</body>
+</html>

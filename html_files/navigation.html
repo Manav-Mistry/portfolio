@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css_files/home.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+
+      <input type="checkbox" id="check">
+      <label for="check"><i class="fa fa-bars" style="color: white;"></i></label>
+
+      <ul class="nav_menu">
+        <li>
+          <img class="MyIcon" src="../pictures/myIcon_nav.jpg" alt="MySelf" height="40px" width="40px" />
+        </li>
+        <li><a href="navigation.html">Home</a></li>
+        <li><a href="contactUs.html">Contact Me</a></li>
+        <li><a href="signUp.html">Login/Sign Up</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="middle">
+    <img src="../pictures/myIcon_middle.jpg" alt="My Icon" />
+    <marquee width="25%">Welcome to My Website</marquee>
+  </section>
+
+  <section class="bottom">
+    <div class="bottom-container">
+      <div class="bottom-box">
+        <img class="bottom-img" src="../pictures/aboutMe.jpg" alt="About Me" />
+        <p class="bottom-p">About Me</p>
+        <div class="para">In this, i had tell about My self.also about my school time and my current college life</div>
+        <button class="bottom-btn" onclick="document.location='aboutMe.html'"><span>Click</span><i class="fas fa-user"
+            id="hover-icons-1"></i></button>
+      </div>
+
+      <div class="bottom-box">
+        <img class="bottom-img" src="../pictures/achievements.jpg" alt="Achievements" />
+        <p class="bottom-p">Achievements</p>
+        <div class="para">In this, i am going to share some of My school time mini Achievements.</div>
+        <button class="bottom-btn" onclick="document.location='certificates.html'"><span>Click</span><i class="fas"
+            style="font-size:18px" id="hover-icons-2"> &#xf559; </i></button>
+
+      </div>
+
+      <div class="bottom-box">
+        <img class="bottom-img" src="../pictures/project.jpg" alt="" />
+        <p class="bottom-p">Hire Me</p>
+        <div class="para">If you wan't to hire me for your project , just fill up the details in given form.</div>
+        <button class="bottom-btn" id="achievement-btn"
+          onclick="document.location='projectDetail.html'"><span>Click</span><i style="font-size:18px" class="fa"
+            id="hover-icons-3">&#xf02d;</i></button>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2 class="footer-hadding">To connect with me</h2>
+
+    <div class="socialMedia">
+
+      <img src="../pictures/footer.png" alt="">
+
+      <div class="footerIcons">
+        <p>follow me on</p>
+        <div class="innerFooterIcons">
+          <i class="fab fa-facebook-square fa-2x footer-icon"
+            onclick="document.location='http://www.facebook.com/Manav Mistry'"></i>
+          <i class="fab fa-linkedin fa-2x footer-icon"
+            onclick="document.location='https://www.linkedin.com/in/manav-mistry-91603a213/'"></i>
+          <i class="fab fa-instagram fa-2x footer-icon"
+            onclick="document.location='http://www.instagram.com/manav_mistry_0702'"></i>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+</html>
